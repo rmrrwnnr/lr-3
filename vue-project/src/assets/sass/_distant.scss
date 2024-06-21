@@ -1,0 +1,94 @@
+@import "variable.scss";
+/*стили для шестого блока*/
+.distant {
+    background-color: #DFE1FF;
+    .distant-bg{
+        display: flex;
+        /* justify-content: space-between; */
+        margin-top: 80px;
+        @media screen and (max-width: $sm) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            width: 320px;
+        }
+        .distant__letter {
+            padding-top: 104px;
+            margin-right: 135px; 
+            @media screen and (max-width: $sm) {
+                padding-top: 60px;
+                margin-right: 0;
+            }
+            .distant-card{
+                width: 180px;
+                height: 50px;
+                background-color: #4047E2;
+                border-radius: 10px;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: center;
+                color: #F9F9F9;
+                padding-top: 17px;
+                padding-bottom: 17px;
+                margin-right: 20px;
+                @media screen and (max-width: $sm) {
+                    width: 296px;
+                    height: 50px;
+                    margin-top: 22px;
+                    margin-bottom: 40px;
+                }
+                .distant-card-nav {
+                    color: #F9F9F9;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #F9F9F9;
+                    }
+                }
+            }           
+        }
+    }
+    .distant__card {
+        background-color: #FFFFFF;
+        border-radius: 35px;    
+        margin-top: 80px;    
+        margin-bottom: 72px;  
+        width: 629px;
+        height: 263px; 
+        @media screen and (max-width: $sm) {
+            width: 296px;
+            height: 275px;
+            margin-top: 25px;
+            margin-bottom: 16px;
+        }
+        .distant__card-wrap {
+            display: flex;
+            align-items: center;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            @media screen and (max-width: $sm) {
+                padding-bottom: 25px;
+            }
+            .distant__card-img {
+                // padding-left: 12px;
+                padding-top: 18px;
+            }
+            .distant__card-list {
+                padding-top: 27px;
+                padding-left: 16px;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                color: #000000;
+                span {
+                    color: #8F99AC;
+                }
+            }
+        }
+    }
+}
+/*конец стили для шестого блока*/

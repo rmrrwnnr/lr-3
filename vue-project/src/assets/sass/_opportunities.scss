@@ -1,0 +1,145 @@
+@import "variable.scss";
+/*стили четвертого блока*/
+.opportunities {
+    margin-bottom: 67px;
+    .opportunities-bg {
+        .row {
+            @media screen and (max-width: $sm) {
+                display: none;
+            }
+
+            .opportunities__card-one {
+                background: #DFE1FF;
+                box-shadow: var(--box-shadow-one);
+                width: 285px;
+                height: 320px;
+                border-radius: 20px;
+                padding-top: 48px;
+                padding-bottom: 61px;
+                .opportunities__card-one-img-wrap {
+                    text-align: center;
+                    margin-bottom: 26px;
+                }
+                .opportunities__card-one-name {
+                    font-family: Rubik;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #3F3A51;
+                    margin-bottom: 18px;
+                }
+                .opportunities__card-one-ps {
+                    font-family: Rubik;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    text-align: center;
+                    color: #3F3A51;
+                }
+            }
+            .opportunities__card-two {
+                background:#FFE1AD;
+                box-shadow: var(--box-shadow-two);
+                width: 285px;
+                height: 320px;
+                border-radius: 20px;
+                padding-top: 48px;
+                padding-bottom: 61px;
+                .opportunities__card-two-img-wrap {
+                    margin-bottom: 26px;
+                    text-align: center;
+                }
+                .opportunities__card-two-name {
+                    font-family: Rubik;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #3F3A51;
+                    margin-bottom: 18px;
+                }
+                .opportunities__card-two-ps {
+                    font-family: Rubik;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    text-align: center;
+                    color: #3F3A51;
+                }
+            }
+        }
+        .mySwiper {
+            height: 430px;
+            display: none;
+            @media screen and (max-width: $sm) {
+                display: flex;
+            }
+            .wrapper {
+                margin-top: 50px;
+            }
+            .cards {
+                // margin-bottom: 10px;
+                .opportunities__card-one-slider {
+                    background: #DFE1FF;
+                    box-shadow: var(--box-shadow-one);
+                    height: 320px;
+                    border-radius: 20px;
+                    padding-top: 48px;
+                    padding-bottom: 61px;
+                    .opportunities__card-one-img-wrap-slider {
+                        text-align: center;
+                        margin-bottom: 26px;
+                    }
+                    .opportunities__card-one-name-slider {
+                        font-family: Rubik;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #3F3A51;
+                        margin-bottom: 18px;
+                    }
+                    .opportunities__card-one-ps-slider {
+                        font-family: Rubik;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        text-align: center;
+                        color: #3F3A51;
+                    }
+                }
+                .opportunities__card-two-slider {
+                    background:#FFE1AD;
+                    box-shadow: var(--box-shadow-two);
+                    height: 320px;
+                    border-radius: 20px;
+                    padding-top: 48px;
+                    padding-bottom: 61px;
+                    .opportunities__card-two-img-wrap-slider {
+                        margin-bottom: 26px;
+                        text-align: center;
+                    }
+                    .opportunities__card-two-name-slider {
+                        font-family: Rubik;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #3F3A51;
+                        margin-bottom: 18px;
+                    }
+                    .opportunities__card-two-ps-slider {
+                        font-family: Rubik;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        text-align: center;
+                        color: #3F3A51;
+                    }
+                }
+            }
+        }
+    }   
+}
+/*конец стили четвертого блока*/

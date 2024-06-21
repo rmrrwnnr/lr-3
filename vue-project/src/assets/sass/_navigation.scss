@@ -1,0 +1,167 @@
+@import "variable.scss";
+/*стили для навигации*/
+.navigation {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $sm) {
+        display: none;
+    }
+    .navigation-logo{
+        width: 159px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }   
+    .navigation__list {
+        display: flex;
+        align-items: center;
+        grid-gap: 51px;
+        @media screen and (max-width: $sm) {
+            display: none;
+        }
+        .navigation__list-item-link {
+            font-weight: 400;
+            color: #3F3A51;
+            text-decoration: none;
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+/*конец стили для навигации*/
+/*стили для адаптации меню*/ 
+.navigatiom-mob {
+    .shadowAll {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100vw;
+        background: #000;
+        opacity: 0.5;
+        z-index: 0;
+        display: none;
+    }
+    &.open {
+        .header__burger-btn span {
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            left: 5px;
+            background-color: #4047E2;
+            &:nth-child(1) {
+                transform: translateY(0) rotate(45deg) !important;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(0) rotate(-45deg) !important;
+            }
+        }
+        .adaptiv .menu {
+            display: block;
+            right: 0;
+        }
+    }
+    .adaptiv {
+        display: none;
+        @media screen and (max-width: $lg) {
+            display: flex;
+            justify-content: space-between; 
+            padding-top: 14px;
+        }
+        .logo-adaptiv {
+            width: 159px;
+        }
+        .header__burger-btn {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            float: right;
+            z-index: 2;
+            cursor: pointer;
+            span {
+                position: absolute;
+                width: 30px;
+                height: 3px;
+                left: 5px;
+                background-color: #4047E2;
+                transition: background-color 0.5s, opacity 0.5px, transform 0.5s;
+                will-change: transform;
+                span:hover {
+                    background-color: #5c5e75;
+                }
+                &:nth-child(1) {
+                    transform: translateY(-10px);
+                }
+                &:nth-child(3) {
+                    transform: translateY(10px);
+                }
+            }
+        }
+        /*крестик*/
+        
+        /*конец крестик*/  
+        .menu {
+            position: absolute;
+            z-index: 1;
+            right: -275px;
+            top: 0;
+            width: 275px;
+            padding: 23px 12px 24px;
+            background-color: #fff;
+            transition: transform 0.5s;
+            will-change: transform;
+            height: 100%;
+            display: none;
+            
+            .menu__list {
+                margin-top: 50px;
+                .menu__item {
+                    text-decoration: none;
+                    text-align: right;
+                    margin-bottom: 22px;
+                    .menu__link {
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 23.4px;
+                        color: #3F3A51;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                            color: #ffc04e;
+                        }
+                    }
+                }
+            }    
+            .menu__bottom {
+                margin-top: 350px;
+                .menu__item-bottom {
+                    text-align: right;
+                    margin-bottom: 16px;
+                    .menu__link-bottom {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16.59px;
+                        color: #8F99AC;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+/*конец стили для адаптации меню*/ 

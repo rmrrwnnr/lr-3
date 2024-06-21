@@ -1,0 +1,121 @@
+@import "variable.scss";
+/*стили для глвного блока*/
+.promo {
+    margin-top: 78px;
+    @media screen and (max-width: $sm) {
+        margin-top: 0px;
+    }
+    .promo-bg {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $sm) {
+            display: flex;
+            flex-direction: column;
+        }
+        .promo-p {
+            font-family: Rubik;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #8F99AC;
+            padding-bottom: 19px;
+            @media screen and (max-width: $sm) {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+        .promo__card {
+            display: flex;
+            @media screen and (max-width: $sm) {
+                display: block;
+            }
+            .promo__card-one{
+                width: 180px;
+                height: 50px;
+                background-color: #4047E2;
+                border-radius: 10px;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: center;
+                color: #F9F9F9;
+                padding-top: 17px;
+                padding-bottom: 17px;
+                margin-right: 20px;
+                @media screen and (max-width: $sm) {
+                    width: 296px;
+                    height: 50px;
+                    align-items: center;
+                    margin-top: 26px;
+                    margin-bottom: 8px;
+                }
+                .promo__card-one-nav {
+                    color: #F9F9F9;;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #F9F9F9;
+                    }
+                }
+            }
+            .promo__card-two{
+                width: 225px;
+                height: 50px;
+                background-color: white;
+                border-radius: 10px;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: center;
+                border: 1px solid;
+                color: #4047E2;
+                padding-top: 17px;
+                padding-bottom: 17px; 
+                @media screen and (max-width: $sm) {
+                    width: 296px;
+                    height: 50px;
+                }
+                .promo__card-two-nav {
+                    color: #4047E2;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        color:#4047E2;
+                    }
+                }
+            }
+        }
+        .promo-pic {
+            display: flex;
+            @media screen and (max-width: $sm) {
+                display: none;
+            }
+        }
+        .promo-pic-adapt{
+            display: none;
+            @media screen and (max-width: $sm) {
+                display: inline-block;
+                margin-top: 30px;
+                width: 296px;
+            }
+        }
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*конец стили главного блока*/

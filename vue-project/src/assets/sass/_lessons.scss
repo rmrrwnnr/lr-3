@@ -1,0 +1,44 @@
+@import "variable.scss";
+/*стили третьего блока*/
+.lessons {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    @media screen and (max-width: $sm) {
+        margin-top: 30px;
+    }
+    .lessons-bg {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $sm) {
+            display: flex;
+            flex-direction: column;
+        }
+        .lessons-pic{
+            @media screen and (max-width: $sm) {
+                display: none;
+            }
+        }
+        .lessons-p{
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23.4px;
+            text-align: left;
+            color: #3F3A51;
+            @media screen and (max-width: $sm) {
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                width: 296px;
+            }
+        }
+        .lessons-pic-adapt{
+            display: none;
+            @media screen and (max-width: $sm) {
+                display: block;
+                width: 296px;
+            }
+        }
+    }
+}
+/*конец стили третьего блока*/
